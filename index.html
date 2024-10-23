@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Place Gerenciamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Adicionar Apartamento</h2>
+            <form id="apartmentForm">
+                <label for="apartmentNumber">Número do Apartamento</label>
+                <input type="text" id="apartmentNumber" required>
+                <label for="block">Bloco</label>
+                <input type="text" id="block" required>
+                <button type="submit">Adicionar Apartamento</button>
+            </form>
+    
+            <h2>Adicionar Morador</h2>
+            <form id="residentForm">
+                <label for="residentName">Nome</label>
+                <input type="text" id="residentName" required>
+                <label for="residentCPF">CPF</label>
+                <input type="text" id="residentCPF" required>
+                <label for="apartmentSelect">Apartamento</label>
+                <select id="apartmentSelect" required></select>
+                <button type="submit">Adicionar Morador</button>
+            </form>
+        </div>
+    
+        <div class="info-container">
+            <h2>Apartamentos e Moradores</h2>
+            <div id="apartmentList"></div>
+        </div>
+    </div>    
+    <footer>
+        <div class="note-container">
+            <h3>Notas</h3>
+            <textarea id="noteInput" placeholder="✍️"></textarea>
+            <button id="saveNoteButton">Salvar Nota</button>
+            <div id="notesList"></div>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
